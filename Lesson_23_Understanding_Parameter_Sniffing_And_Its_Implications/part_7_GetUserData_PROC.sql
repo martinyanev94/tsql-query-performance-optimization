@@ -1,0 +1,9 @@
+CREATE PROCEDURE GetUserData_Active AS
+BEGIN
+    SELECT * FROM Users WHERE IsActive = 1;
+END
+
+CREATE PROCEDURE GetUserData_Inactive AS
+BEGIN
+    SELECT * FROM Users WHERE IsActive = 0;
+END
