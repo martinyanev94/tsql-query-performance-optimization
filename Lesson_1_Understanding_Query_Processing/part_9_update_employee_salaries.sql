@@ -1,0 +1,13 @@
+BEGIN TRY
+    BEGIN TRANSACTION;
+
+    UPDATE Employees
+    SET Salary = Salary * 1.10
+    WHERE Department = 'Sales';
+
+    COMMIT TRANSACTION;
+END TRY
+BEGIN CATCH
+    ROLLBACK TRANSACTION;
+    PRINT ERROR_MESSAGE();
+END CATCH;
