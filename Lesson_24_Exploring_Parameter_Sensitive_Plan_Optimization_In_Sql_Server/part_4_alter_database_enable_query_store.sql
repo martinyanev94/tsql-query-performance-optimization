@@ -1,0 +1,2 @@
+ALTER DATABASE YourDatabaseName 
+SET QUERY_STORE = ON;
