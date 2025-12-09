@@ -1,0 +1,6 @@
+SET SHOWPLAN_XML ON;
+GO
+
+SELECT * FROM Employees WHERE Department = 'Sales';
+SET SHOWPLAN_XML OFF;
+GO
