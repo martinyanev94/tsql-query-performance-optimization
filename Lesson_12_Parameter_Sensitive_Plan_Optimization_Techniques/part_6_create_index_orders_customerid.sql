@@ -1,0 +1,1 @@
+CREATE NONCLUSTERED INDEX IDX_CustomerID ON Orders(CustomerID);
