@@ -1,0 +1,6 @@
+CREATE PARTITION FUNCTION SalesPartitionFunction (INT)
+AS RANGE LEFT FOR VALUES (2019, 2020, 2021, 2022);
+
+CREATE PARTITION SCHEME SalesPartitionScheme 
+AS PARTITION SalesPartitionFunction
+TO (Sales_2019, Sales_2020, Sales_2021, Sales_2022);
