@@ -1,0 +1,6 @@
+SET SHOWPLAN_XML ON;
+GO
+
+SELECT * FROM Sales.SalesOrderHeader WHERE OrderDate > '2023-01-01';
+GO
+SET SHOWPLAN_XML OFF;
