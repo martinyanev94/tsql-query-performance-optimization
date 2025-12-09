@@ -1,0 +1,3 @@
+DBCC FREEPROCCACHE;
+CREATE INDEX IX_CustomerID 
+ON Orders(CustomerID);
