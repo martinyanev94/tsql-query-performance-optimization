@@ -1,0 +1,13 @@
+ALTER DATABASE SCOPED CONFIGURATION 
+SET PARAMETER_SENSITIVE_PLAN_OPTIMIZATION = ON;
+CREATE PROCEDURE GetOrdersByDateAndRegion
+    @StartDate DATE,
+    @EndDate DATE,
+    @Region NVARCHAR(50)
+AS
+BEGIN
+    SELECT *
+    FROM Orders
+    WHERE OrderDate BETWEEN @StartDate AND @EndDate
+    AND Region = @Region;
+END
