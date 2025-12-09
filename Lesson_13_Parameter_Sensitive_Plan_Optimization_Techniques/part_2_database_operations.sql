@@ -1,0 +1,3 @@
+CREATE INDEX IX_CustomerID
+ON Orders(CustomerID);
+UPDATE STATISTICS Orders;
