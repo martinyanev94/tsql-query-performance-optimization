@@ -1,0 +1,4 @@
+DECLARE @UserID INT;
+SET @UserID = 1;
+
+SELECT * FROM Users WHERE UserID = @UserID;
